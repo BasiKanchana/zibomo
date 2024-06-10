@@ -21,13 +21,13 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-white ">
+   <!-- Start horizantal navbar -->
+   <nav class="navbar navbar-expand-lg bg-white ">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="img/zibomo-logo.png" class="w-25 log" alt="">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
@@ -36,33 +36,42 @@
             <i class="fa-solid fa-bars"></i>
           </li>
           <li class="nav-item mx-2">
-            <input type="search" name="Search" placeholder="Search" class="input-search px-2" />
-
-
-          </li>
-          <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-
+           <input type="search" name="Search" placeholder="Search" class="input-search px-2"/>
+          </li>          
         </ul>
         <span class="navbar-text">
-          <span class="notifications fs-5"><i class="fa-regular fa-bell"></i></span>
-          <span class="messages fs-5 mx-4"><i class="fa-regular fa-message"></i></span>
-          <span class="  user-profile-section rounded-circle"><img src="img/user-profile.png"
-              class="user-profile rounded-circle" alt="user-profile"></span>
-          <span>
-            <select class="border border-white " aria-label=" ">
-              <option selected>Arun</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </span>
-          <span class="notification-count">4</span>
-          <span class="message-count">3</span>
 
+          <button type="button" class="btn position-relative navbar-icon">
+            <i class="fa-regular fa-bell"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success navbar-badge">
+              0
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+
+          <button type="button" class="btn position-relative navbar-icon me-4">
+            <i class="fa-regular fa-message"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary navbar-badge">
+              0
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+
+          <span class="  user-profile-section rounded-circle"><img src="img/user-profile.png" class="user-profile rounded-circle"  alt="user-profile"></span>
+         <span>
+          <select class="border border-white " aria-label=" ">
+            <option selected>Arun</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+         </span>
+       
         </span>
       </div>
     </div>
   </nav>
+  <!-- End horizantal navbar -->
   <section>
     <div class="container-fluid ">
       <div class="row p-0">
