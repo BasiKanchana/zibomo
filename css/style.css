@@ -37,6 +37,18 @@ ul li {
     right: 19% !important;
     top: 29.5% !important;
 }
+/* input[type=search] {
+  width: 100% !important;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 20px 20px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+} */
 @media only screen and (min-width: 1595px) and (max-width: 1921px) {
     .input-search{
         position: relative !important;
@@ -55,7 +67,7 @@ ul li {
     }
     .search-icon{
         position: absolute;
-    right: 44% !important;
+        right: 34% !important;
     top: 30% !important;
     }
   }
@@ -66,7 +78,7 @@ ul li {
     }
     .search-icon{
         position: absolute;
-        right: 37% !important;
+        right: 39% !important;
         top: 30% !important;
     }
   }
@@ -307,6 +319,31 @@ ul li {
     left: 17px;
     
   }
+  .cards-sales-count{
+    font-weight: 900px;
+  }
   footer{
     border-top: 1px solid #9b999996;
+  }
+
+  /* Start table styles */
+  table thead{
+    color:#C92026;
+  }
+  /* End table styles */
+  .input-search[type=search] {
+    background-image: url('../img/search.png');
+    background-size: 17px;
+    background-position: 98%;
+    background-repeat: no-repeat;
+    border: 1px solid #a7a7a7fa;
+  }
+  .navbar-icon{
+    font-size: 20px !important;
+    padding: 0 !important;
+    margin: 0px 10px;
+  }
+  .navbar-badge{
+    font-size: 12px !important;
+    font-weight: 100;
   }

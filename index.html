@@ -30,15 +30,26 @@
           </li>
           <li class="nav-item mx-2">
            <input type="search" name="Search" placeholder="Search" class="input-search px-2"/>
-      
-          
-          </li>
-          <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-          
+          </li>          
         </ul>
         <span class="navbar-text">
-          <span class="notifications fs-5"><i class="fa-regular fa-bell"></i></span>
-          <span class="messages fs-5 mx-4"><i class="fa-regular fa-message"></i></span>
+
+          <button type="button" class="btn position-relative navbar-icon">
+            <i class="fa-regular fa-bell"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success navbar-badge">
+              0
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+
+          <button type="button" class="btn position-relative navbar-icon me-4">
+            <i class="fa-regular fa-message"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary navbar-badge">
+              0
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+
           <span class="  user-profile-section rounded-circle"><img src="img/user-profile.png" class="user-profile rounded-circle"  alt="user-profile"></span>
          <span>
           <select class="border border-white " aria-label=" ">
@@ -48,8 +59,6 @@
             <option value="3">Three</option>
           </select>
          </span>
-         <span class="notification-count">4</span>
-         <span class="message-count">3</span>
        
         </span>
       </div>
@@ -135,7 +144,7 @@
                     <div class="card-title d-flex">
                    <span><strong>Salse | </strong> </span> 
                    <span>Today</span>
-                   <span class="fs-5 "></span>  
+                  
                     </div>
                     <div class="row py-2">
                       <div class="col-sm-6 ">
@@ -145,7 +154,7 @@
 
                       </div>
                       <div class="col-sm-6 p-0 m-0 ">
-                        <h2 class=""><strong>145</strong></h2>
+                        <h2 class="cards-sales-count">145</h2>
                         <p> <span class="text-success">12%</span>
                             <sapn>increase</sapn></p>
                         
@@ -172,7 +181,7 @@
 
                       </div>
                       <div class="col-sm-6 p-0 m-0 ">
-                        <h2 class=""><strong>500</strong></h2>
+                        <h2 class="cards-sales-count">500</h2>
                         <p> <span class="text-success">8%</span>
                             <sapn>increase</sapn></p>
                         
@@ -187,8 +196,8 @@
                   
                   <div class="card-body">
                     <div class="card-title d-flex">
-                   <span><strong>Salse | </strong> </span> 
-                   <span>Today</span>
+                   <span><strong>Customers | </strong> </span> 
+                   <span>This Year</span>
                    <span class="fs-5 "></span>  
                     </div>
                     <div class="row py-2">
@@ -199,7 +208,7 @@
 
                       </div>
                       <div class="col-sm-6 p-0 m-0 ">
-                        <h2 class=""><strong>1244</strong></h2>
+                        <h2 class="cards-sales-count">1244</h2>
                         <p> <span class="text-danger">12%</span>
                             <sapn>decrease</sapn></p>
                       </div> 
@@ -294,8 +303,10 @@
       </div>
       </div>
       <footer class="py-4 text-center">
-       <div>&copy; Copyright <strong>Zibomo</strong>. All Rights Reserved</div> 
-       <div>Designed by <a href="" class="text-decoration-none"> Hasini Multi Tech</a></div> 
+       <div>&copy; Copyright Zibomo. All Rights Reserved</div> 
+       <div>Designed by 
+        <!-- <a href="" class="text-decoration-none"> Hasini Multi Tech</a> -->
+      </div> 
   
       </footer>
     </div>
